@@ -1,0 +1,42 @@
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 24px;
+  padding: 24px 0 40px;
+  border-top: 1px solid var(--line);
+  font-size: var(--text-small);
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.footer__confirm {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 16px;
+  color: var(--fg);
+}
+
+/* Кнопки, которые выглядят как ссылки */
+.footer__action {
+  min-height: 36px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--fg);
+  font-size: var(--text-small);
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 4px;
+  cursor: pointer;
+}
+
+.footer__action:hover {
+  text-decoration-color: currentColor;
+}
+
+.footer__action--danger {
+  font-weight: 600;
+}

@@ -1,0 +1,7 @@
+node_modules
+dist
+*.log
+.DS_Store
+*.tsbuildinfo
+# Локальные настройки превью для Claude (содержат путь к Node на этом компьютере)
+.claude/

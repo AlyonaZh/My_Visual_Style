@@ -1,0 +1,21 @@
+.not-found {
+  padding: var(--space-top) 0 var(--space-section);
+  max-width: 640px;
+}
+
+.not-found__title {
+  font-size: clamp(40px, 8vw, 72px);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 0.95;
+}
+
+.not-found__text {
+  margin-top: 24px;
+  color: var(--muted);
+}
+
+.not-found__text a {
+  color: var(--fg);
+  text-underline-offset: 3px;
+}

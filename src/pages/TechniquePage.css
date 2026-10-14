@@ -1,0 +1,145 @@
+.technique {
+  padding-bottom: 72px;
+}
+
+/* 1. Шапка приёма */
+
+.technique__intro {
+  padding-top: var(--space-top);
+}
+
+.technique__axis {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+.technique__axis-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.technique__title {
+  margin-top: 24px;
+  font-size: clamp(56px, 12vw, 128px);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+  line-height: 0.95;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.technique__summary {
+  max-width: 640px;
+  margin-top: 36px;
+  font-size: var(--text-lead);
+  line-height: 1.5;
+}
+
+.technique__history {
+  max-width: 640px;
+  margin-top: 16px;
+  color: var(--muted);
+}
+
+/* 2. Пример */
+
+.technique__example {
+  margin: 72px 0 32px;
+}
+
+/* 3. Задание */
+
+.technique__task {
+  max-width: 640px;
+  font-size: var(--text-lead);
+  line-height: 1.5;
+}
+
+.technique__tips {
+  display: grid;
+  gap: 8px;
+  margin-top: 24px;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+}
+
+/* 4. У кого посмотреть */
+
+.technique__artists {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  padding: 0;
+  list-style: none;
+}
+
+.technique__artist-name {
+  display: block;
+  font-weight: 500;
+}
+
+.technique__artist-note {
+  display: block;
+  margin-top: 2px;
+  font-size: var(--text-small);
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+/* 5. Быстрее с нейросетью */
+
+.technique__prompt-intro {
+  max-width: 640px;
+}
+
+.technique__prompts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.technique__prompt-note {
+  margin-top: 16px;
+  font-size: var(--text-small);
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+/* Узкий экран */
+
+@media (max-width: 719px) {
+  .technique__intro {
+    padding-top: 56px;
+  }
+
+  .technique__title {
+    margin-top: 20px;
+  }
+
+  .technique__summary {
+    margin-top: 28px;
+    font-size: 20px;
+  }
+
+  .technique__example {
+    margin: 48px 0 16px;
+  }
+
+  .technique__task {
+    font-size: 20px;
+  }
+
+  .technique__artists,
+  .technique__prompts {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

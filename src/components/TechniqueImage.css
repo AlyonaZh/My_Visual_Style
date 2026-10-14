@@ -1,0 +1,31 @@
+.technique-image {
+  margin: 0;
+}
+
+.technique-image__img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-media);
+}
+
+.technique-image__placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 16 / 7;
+  padding: 16px;
+  border: 1px dashed var(--muted);
+  border-radius: var(--radius-media);
+  background: var(--plate);
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  text-align: center;
+}
+
+.technique-image__caption {
+  margin-top: 12px;
+  font-size: var(--text-small);
+  line-height: 1.5;
+  color: var(--muted);
+}

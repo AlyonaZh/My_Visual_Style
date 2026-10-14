@@ -1,0 +1,50 @@
+.section {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  column-gap: 24px;
+  padding: 40px 0;
+}
+
+/* Разделы подряд разделены тонкой линией */
+.section--default + .section--default {
+  border-top: 1px solid var(--line);
+}
+
+.section--strong {
+  margin-top: 32px;
+  padding-top: 56px;
+  border-top: 2px solid var(--fg);
+}
+
+.section__label {
+  grid-column: span 3;
+  font-size: var(--text-label);
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.section__content {
+  grid-column: span 9;
+  min-width: 0;
+}
+
+@media (max-width: 719px) {
+  .section {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 32px 0;
+  }
+
+  .section--strong {
+    padding-top: 40px;
+  }
+
+  .section__label,
+  .section__content {
+    grid-column: 1;
+  }
+
+  .section__label {
+    margin-bottom: 16px;
+  }
+}

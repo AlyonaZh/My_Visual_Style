@@ -1,0 +1,26 @@
+.prompt-card {
+  padding: 12px 20px 22px;
+  border-radius: var(--radius-media);
+  background: var(--surface);
+}
+
+.prompt-card__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-right: -10px;
+  margin-bottom: 12px;
+}
+
+.prompt-card__language {
+  font-size: 13px;
+  color: var(--muted);
+}
+
+.prompt-card__text {
+  font-family: var(--font-mono);
+  font-size: var(--text-mono);
+  line-height: 1.65;
+  overflow-wrap: break-word;
+}

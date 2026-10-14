@@ -1,0 +1,63 @@
+/* Все цвета, шрифты и отступы сервиса. Цвета задаются только здесь. */
+
+:root {
+  /* Цвета: светлая тема */
+  --bg: #fbfbfc;
+  --fg: #111114;
+  --muted: #65676f;
+  --line: #e3e4e9;
+  --surface: #f1f2f5;
+  --plate: #e9eaee;
+
+  /* Цвета осей */
+  --axis-color: #e8318a;
+  --axis-texture: #f2541b;
+  --axis-form: #2b3fe0;
+  --axis-composition: #7fa80f;
+
+  /* Шрифты */
+  --font-sans: "Onest", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+
+  /* Размеры текста */
+  --text-body: 17px;
+  --text-lead: 22px;
+  --text-label: 14px;
+  --text-mono: 13.5px;
+  --text-small: 14px;
+
+  /* Раскладка */
+  --content-max: 1040px;
+  --gutter: 16px;
+  --space-section: 56px; /* между крупными разделами, 40–72 px */
+  --space-top: 88px; /* сверху до заголовка приёма */
+
+  /* Скругления */
+  --radius-media: 4px;
+  --radius-field: 8px;
+  --radius-pill: 999px;
+
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --bg: #121214;
+  --fg: #ededf0;
+  --muted: #9c9da6;
+  --line: #2b2b31;
+  --surface: #1b1b1f;
+  --plate: #1e1e23;
+
+  --axis-color: #ff4fa3;
+  --axis-texture: #ff7442;
+  --axis-form: #6b7bff;
+  --axis-composition: #c6e832;
+
+  color-scheme: dark;
+}
+
+@media (min-width: 720px) {
+  :root {
+    --gutter: 24px;
+  }
+}
